@@ -113,6 +113,9 @@ class ElementsSimulationHubNode(BaseNode):
         )
         emitters_socket.text = 'Emitters'
 
+    def draw_buttons(self, context, layout):
+        layout.operator('elements.simulate_particles')
+
 
 class ElementsSourceObjectNode(BaseNode):
     bl_idname = 'elements_source_object_node'
